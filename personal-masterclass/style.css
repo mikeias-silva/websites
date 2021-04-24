@@ -70,11 +70,12 @@ footer {
   margin-top: 25px;
 }
 
-ul {
+.lista-valores ul,
+footer ul {
   padding: 0;
-}
-
-.btn-inscrevase {
+  list-style-type: none;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 .btn-inscrevase span {
@@ -95,24 +96,23 @@ ul {
 .content-footer {
   padding-top: 25px;
 }
-ul{
-    list-style-type: none;
-  text-decoration: none;
-  overflow: hidden;
-}
-ul a{
+
+.lista-valores a, .footer a {
   list-style-type: none;
   text-decoration: none;
   overflow: hidden;
-  color: #FFFFFF;
-    font-size: 22px;
-
+  color: #ffffff;
+  font-size: 22px;
 }
 
-ul a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    color: #fff;
+.lista-valores ul a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
+}
+
+.lista-valores li {
+  margin-bottom: 10px;
 }
 .content-footer-bottom {
   display: flex;
@@ -122,30 +122,26 @@ ul a:hover{
   width: 100%;
   font-size: 12px;
   padding-top: 25px;
- 
 }
 
-.logo-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    padding-top: 25px;
-   
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-top: 25px;
 }
 
-.logo-footer h2{
-    font-weight: 800;
+.logo-footer h2 {
+  font-weight: 800;
 }
 
-.texto-footer{
-    
-    text-align: justify;
-    
+.texto-footer {
+  text-align: justify;
 }
 
-.redes-sociais{
-    display: flex;
-    justify-content: center;
+.redes-sociais {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -173,5 +169,9 @@ ul a:hover{
 
   .subtitulo1 {
     text-align: center;
+  }
+
+  .footer li a{
+    font-size: 18px;
   }
 }
